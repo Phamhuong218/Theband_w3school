@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.9em
+}
+.container1 h1, .italic-text {
+    text-align: center;
+    display: block
+}
+.container1 i {
+    color: grey
+}
+.image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    gap: 20px;
+}
+.container1 .image .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.container1 img {
+    border-radius: 10px;
+    width: 233.34px;
+    height: 350px;
+    object-fit: cover
+    
+}
+.container1 span {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.container1 h1 {
+    padding-top: 100px
+}
+.italic-text{
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+@media only screen and (max-width: 600px) {
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .container1 .image .img {
+        width: 50vw
+    }
+    .header .navbar :not(a:nth-of-type(1)) {
+        display: none;
+    }
+    .header .search-icon span {
+        display: none;
+    } 
+    .container1 {
+        padding-top: 360px
+    }
+}
+.container1 p {
+    padding: 20px;
+    text-align: justify;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    padding: 0 25px;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    left: 0
+}
+.header .navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 20px 30px;
+    display: inline-block;
+    
+}
+.header .navbar a:hover {
+    background: grey;
+    cursor: pointer;
+
+}
+.header .search-icon span{
+    color: white;
+    padding: 0 50px;
+}
+.header .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.header .search-icon:hover {
+    background: rgb(230, 66, 66);
+    cursor: pointer
+}
+
+/* Part 2 */
+.container2 {
+    background: black
+}
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    background: black;
+}
+
+
+.container2 .title {
+    color: white;
+}
+.container2 .title h1, .text {
+    text-align: center;
+    display: block
+}
+.container2 .title h1 {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+.container2 .title i {
+    padding-bottom: 30px
+}
+.container2 .month {
+    background: white;
+    margin: 30px 0;
+  
+}
+.container2 .month p {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(204, 203, 203);
+}
+.container2 .month > p > span {
+    background: rgb(240, 56, 56);
+    color: white;
+    padding: 2px 5px
+}
+.container2 .month > p:nth-of-type(3) {
+    position: relative
+}
+.container2 .month > p:nth-of-type(3) > span {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px
+}
+
+
+.container2 .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    background: black;
+    width: 800px
+}
+.container2 .gallery .place img {
+    max-width: 100%;
+}
+.container2 .gallery .place .info {
+    padding: 20px 15px;
+    background: white
+}
+.container2 .gallery b {
+    padding-bottom: 20px
+}
+.container2 .gallery .date {
+    color: grey
+}
+.container2 .gallery .place .description {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.container2 .gallery .place .info button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+/* Part 2 */
+
+/* Part 3 */
+.container3 {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 160px
+}
+.container3 h1 {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 25px
+}
+.container3 .italic {
+  display: block;
+  text-align: center;
+  color: grey;
+  padding-bottom: 35px
+}
+.container3 .split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.container3 .split .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.container3 .split .contact-info div{
+  display: grid;
+  grid-template-columns: 40px auto;
+  align-items: center
+}
+.container3 .split .fan-info .line1 input {
+  border: 1px solid grey;
+  padding: 10px;
+}
+  .container3 .split .fan-info .line1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+.container3 .split .fan-info .line2 input{
+  border: 1px solid grey;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%
+}
+.container3 button {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 8px 17px;
+  position: absolute;
+  right: 0
+}
+.container4 img {
+  max-width: 100vw; 
+}
+.container4 .social-media {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  color: #555555;
+ }
+.container4 .social-media i:hover {
+  color: #999999
+}
+.container4 p {
+  color: grey;
+  text-align: center;
+  margin-bottom: 45px
+}
+.container4 p > a {
+  color: grey;  
+}
+/* Part 3 */
